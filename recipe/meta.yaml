@@ -1,5 +1,5 @@
 {% set name = "IntegratorXX" %}
-{% set version = "0.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   # no tags on repo yet, but this is the master HEAD in stable use
-  url: https://github.com/wavefunction91/{{ name }}/archive/cf2917c.tar.gz
+  url: https://github.com/wavefunction91/IntegratorXX/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: d2826439d14b3f716ffd57a07d1d407de029a80c0e0446998b8f1339d5085b9c
   patches:
     - 0001-windows-adaptations.patch
-  sha256: 7b16cee93458e528dea190b17b5f6ebf25024ccc28a8c66fceae603a345f6713
 
 build:
   number: 0
