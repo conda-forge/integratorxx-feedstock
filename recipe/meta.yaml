@@ -13,9 +13,11 @@ source:
     - 0001-windows-adaptations.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('integratorxx', max_pin='x.x') }}
+  ignore_run_exports:
+    - catch2  # test requirement
 
 requirements:
   build:
